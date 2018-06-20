@@ -441,11 +441,11 @@ namespace TheLastSlice.Entities
                     {
                         if(DeliveredFrog)
                         {
-                            TheLastSliceGame.Instance.GameOver(GameOverReason.WrongDeliveryFrog);
+                            TheLastSliceGame.LevelManager.OnLevelComplete();
                         }
                         else
                         {
-                            TheLastSliceGame.Instance.GameOver(GameOverReason.WrongDelivery);
+                            TheLastSliceGame.LevelManager.OnLevelComplete();
                         }
                     }
                     else if(IsLevelComplete())
